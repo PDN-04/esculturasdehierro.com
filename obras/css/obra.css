@@ -1,0 +1,206 @@
+.container
+{
+    display: flex;
+
+    min-height: calc(100vh - 150px - 20px);
+    padding: 10px;
+
+    justify-content: space-around;
+}
+
+.galeria
+{
+    width: 40%;
+}
+
+.descripcion
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 40%;
+}
+
+.principal img
+{
+    width: 100%;
+}
+
+.todas
+{
+    display: flex;
+
+    width: 100%;
+
+    justify-content: space-between;
+}
+
+.foto
+{
+    cursor: pointer;
+    text-align: center;
+}
+
+.foto img
+{
+    width: 100%;
+}
+
+.nombre-responsive,
+.precio-responsive,
+.disponibilidad-responsive
+{
+    display: none;
+}
+
+.nombre,
+.precio,
+.disponibilidad
+{
+    display: block;
+
+    padding: 10px 0;
+
+    text-align: center;
+}
+
+.nombre
+{
+    font-size: 30px;
+}
+
+.precio
+{
+    font-size: 25px;
+}
+
+.disponibilidad
+{
+    font-weight: bold;
+
+    color: #a00;
+}
+
+.contacto
+{
+    line-height: normal;
+
+    display: block;
+
+    padding: 10px 0;
+}
+
+.contacto a
+{
+    text-decoration: none;
+
+    color: #b29600;;
+}
+
+.separacion
+{
+    display: block;
+
+    width: 50%;
+    max-width: 516px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+table
+{
+    width: 100%;
+    margin: 10px 0 !important;
+
+    border: 1px solid #333 !important;
+}
+
+table thead
+{
+    text-align: center;
+
+    color: #fff;
+    background: #333;
+}
+
+table thead td
+{
+    padding: 10px;
+}
+
+table tbody td
+{
+    padding: 10px;
+}
+
+table tr td:nth-of-type(1)
+{
+    width: 30%;
+}
+
+table tr td:nth-of-type(2)
+{
+    width: 70%;
+}
+
+@media screen and (max-width: 981px)
+{
+    .container
+    {
+        flex-direction: column;
+
+        min-height: calc(100vh - 100px - 20px);
+
+        align-items: center;
+    }
+
+    .galeria
+    {
+        width: 100%;
+    }
+
+    .descripcion
+    {
+        width: 100%;
+    }
+
+    .nombre-responsive,
+    .precio-responsive,
+    .disponibilidad-responsive
+    {
+        display: block;
+
+        margin: 10px 0;
+
+        text-align: center;
+    }
+
+    .nombre-responsive
+    {
+        font-size: 30px;
+    }
+
+    .precio-responsive
+    {
+        font-size: 25px;
+    }
+
+    .disponibilidad-responsive
+    {
+        font-weight: bold;
+
+        color: #a00;
+    }
+
+    .nombre,
+    .precio,
+    .disponibilidad
+    {
+        display: none;
+    }
+
+    .contacto
+    {
+        order: 1;
+    }
+}

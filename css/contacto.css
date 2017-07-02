@@ -1,0 +1,116 @@
+.formulario
+{
+    width: 50%;
+    min-height: calc(100vh - 150px - 100px);
+    margin: 0 auto;
+    padding: 50px 10px;
+}
+
+input[type='text'],
+input[type='email'],
+textarea
+{
+    font-family: 'ralewaylight';
+    font-size: 14px;
+
+    width: calc(100% - 30px);
+    margin: 10px 0;
+    padding: 15px;
+
+    color: #333;
+    border: 1px solid #333;
+    background-color: #fff;
+}
+
+textarea
+{
+    resize: none;
+}
+
+input[type='submit']
+{
+    font-family: 'ralewaylight';
+    font-size: 20px;
+
+    margin: 10px 0;
+    padding: 10px 20px;
+
+    cursor: pointer;
+    transition: .25s ease;
+
+    color: #fff;
+    border: 2px solid #b29600;
+    background-color: #b29600;
+}
+
+input[type='submit']:hover
+{
+    transition: .25s ease;
+
+    color: #333;
+    background-color: #fff;
+}
+
+::-webkit-input-placeholder
+{
+    color: #333;
+}
+
+:-moz-placeholder
+{
+    color: #333;
+}
+
+::-moz-placeholder
+{
+    color: #333;
+}
+
+:-ms-input-placeholder
+{
+    color: #333;
+}
+
+.enviar
+{
+    display: flex;
+
+    align-items: center;
+}
+
+.loading
+{
+    display: none;
+
+    margin: 0 10px;
+}
+
+.error
+{
+    display: none;
+
+    color: #750000;
+}
+
+.respuesta
+{
+    display: none;
+
+    width: calc(100% - 30px);
+    margin: 10px 0;
+    padding: 15px;
+
+    transition: .25s ease;
+
+    color: #fff;
+    background-color: #005000;
+}
+
+@media screen and (max-width: 981px)
+{
+    .formulario
+    {
+        width: calc(100% - 20px);
+        min-height: calc(100vh - 100px - 100px);
+    }
+}

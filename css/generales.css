@@ -1,0 +1,289 @@
+/* Estilos cuerpo */
+
+body
+{
+    font-family: 'ralewaylight';
+}
+
+
+/* Estilos cabecera */
+
+header
+{
+    font-size: 20px;
+
+    position: fixed;
+    z-index: 100;
+
+    width: 100%;
+
+    background-color: #fff;
+}
+
+header h1
+{
+    font-size: 30px;
+
+    padding: 10px;
+
+    text-align: center;
+}
+
+.menu
+{
+    text-align: center;
+
+    box-shadow: 0 -1px #333 inset;
+}
+
+.menu-responsive
+{
+    display: none;
+
+    background-color: #fff;
+    box-shadow: 0 -1px #333 inset;
+}
+
+.menu li
+{
+    display: inline-block;
+
+    width: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a
+{
+    position: relative;
+
+    display: inline-block;
+
+    padding: 20px;
+
+    text-decoration: none;
+
+    color: #000;
+}
+
+.menu li a:before,
+.menu li a:after
+{
+    position: absolute;
+
+    width: 0;
+    height: 3px;
+
+    content: '';
+    transition: all .25s ease;
+
+    background-color: #b29600;
+}
+
+.menu li a:before
+{
+    top: 0;
+    left: 0;
+}
+
+.menu li a:after
+{
+    right: 0;
+    bottom: 0;
+}
+
+.menu li a:hover:before,
+.menu .actual a:before,
+.menu li a:hover:after,
+.menu .actual a:after
+{
+    width: 100%;
+}
+
+.logo
+{
+    margin: 10px !important;
+}
+
+.logo a
+{
+    padding: 0 !important;
+}
+
+.logo a:before,
+.logo a:after
+{
+    content: none !important;
+}
+
+.logo img
+{
+    height: 80px;
+
+    vertical-align: middle;
+}
+
+.submenu-responsive
+{
+    position: absolute;
+    z-index: -1;
+    top: -500px;
+
+    width: 100%;
+
+    background-color: #fff;
+}
+
+.submenu-responsive li
+{
+    text-align: center;
+
+    box-shadow: 0 -1px #333 inset;
+}
+
+.submenu-responsive a
+{
+    display: block;
+
+    width: 100%;
+    padding: 20px 0;
+
+    text-decoration: none;
+
+    color: #000;
+}
+
+.logo-responsive img,
+.boton-responsive img
+{
+    height: 80px;
+    margin: 10px;
+
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 981px)
+{
+    header h1
+    {
+        display: none;
+    }
+
+    .menu
+    {
+        display: none;
+    }
+
+    .menu-responsive
+    {
+        display: flex;
+
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* Estilos sección */
+
+section
+{
+    padding-top: 150px;
+}
+
+@media screen and (max-width: 981px)
+{
+    section
+    {
+        padding-top: 100px;
+    }
+}
+
+/* Estilos botón subir */
+
+.subir
+{
+    position: fixed;
+    z-index: 50;
+    right: 25px;
+    bottom: 125px;
+
+    width: 0px;
+    height: 0px;
+
+    cursor: pointer;
+
+    border-radius: 100%;
+    background-color: #fff;
+}
+
+.subir img
+{
+    width: 100%;
+}
+
+@media screen and (max-width: 981px)
+{
+    .subir
+    {
+        display: none;
+    }
+}
+
+/* Estilos pie */
+
+footer
+{
+    display: flex;
+
+    padding: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 1px #333 inset;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer div
+{
+    display: flex;
+    flex-direction: column;
+}
+
+footer div span:nth-of-type(1)
+{
+    font-size: 30px;
+
+    padding: 10px 0;
+}
+
+footer div a
+{
+    font-size: 30px;
+
+    transition: .25s ease;
+    text-decoration: none;
+
+    color: #333;
+}
+
+footer div a:hover
+{
+    transition: .25s ease;
+    text-decoration: none;
+
+    color: #000;
+}
+
+@media screen and (max-width: 981px)
+{
+    footer
+    {
+        flex-direction: column;
+    }
+    footer div
+    {
+        margin: 10px 0;
+    }
+}

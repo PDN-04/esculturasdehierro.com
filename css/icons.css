@@ -1,0 +1,33 @@
+@font-face
+{
+    font-family: 'facebook';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('icons/facebook.eot?wb0xhd');
+    src: url('icons/facebook.eot?wb0xhd#iefix') format('embedded-opentype'),
+    url('icons/facebook.ttf?wb0xhd') format('truetype'),
+    url('icons/facebook.woff?wb0xhd') format('woff'),
+    url('icons/facebook.svg?wb0xhd#facebook') format('svg');
+}
+
+[class^='icon-'],
+[class*=' icon-']
+{
+    font-family: 'facebook' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    text-transform: none;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before
+{
+    content: '\ea90';
+}

@@ -325,6 +325,7 @@
                 <span class="nombre">Libélula Amarilla</span>
                 <img src="../images/Linea-larga.png" alt="">
                 <span class="dimensiones">90 x 70 x 30 cm</span>
+                <span class="disponibilidad">(No disponible)</span>
             </div>
         </div>
         <div class="escultura" onclick = "location.href = 'mariposa-azul/'">

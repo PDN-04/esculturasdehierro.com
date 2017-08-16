@@ -43,7 +43,7 @@
     <section>
         <div class="container">
             <span class="nombre-responsive">Hormiga Negra</span>
-            <span class="precio-responsive">500,00 €</span>
+            <!-- <span class="precio-responsive">500,00 €</span> -->
             <div class="galeria">
                 <div class="principal">
                     <img src="../images/HormigaNegra1.jpg" alt="">
@@ -65,7 +65,7 @@
             </div>
             <div class="descripcion">
                 <span class="nombre">Hormiga Negra</span>
-                <span class="precio">500,00 €</span>
+                <!-- <span class="precio">500,00 €</span> -->
                 <span class="contacto">Si desea adquirir esta escultura puede ponerse en contacto conmigo a través de este <a href="../../contacto/">formulario de contacto</a> o, si lo prefiere, llamando al teléfono 619-854-809. Si la escultura no está disponible puede solicitar una similar por encargo.</span>
                 <img class="separacion" src="../../images/Linea-larga-negra.png" alt="">
                 <table>
